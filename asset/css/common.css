@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3dfdf;
+    margin: 3px;
+}
+nav a {
+    color: #3caee7;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+nav a:hover{
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    list-style-type: none;
+    padding-left: 0px;
+    /* padding: 10px 20px 10px 20px; */
+}
