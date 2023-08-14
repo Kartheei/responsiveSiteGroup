@@ -9,13 +9,33 @@ header {
     align-items: center;
     background-color: #e3dfdf;
     margin: 3px;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #ec3c6a;
+}
+
+.tm-main {
+    background: #cc4151;
+    padding: 2%;
+}
+
+.tm-main p {
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 4vw;
+    padding: 2%;
+    color: #fff;
+    font-weight: 700;
 }
 
 .tm-nav {
     max-width: 90%;
     /* border: 2px solid #3a382e; */
     /* display: block; */
-    margin: 10px auto 5px auto;
+    /* margin: 10px auto 5px auto; */
     display: flex;
     justify-content: space-between;
 
@@ -34,8 +54,8 @@ header {
 
 
 .tm-nav div ul li a {
-    font-size: 1.8vmax;
-    padding: 10px 30px;
+    font-size: 20px;
+    padding: 10px 12px;
     text-decoration: none;
     color: #d16161;
     line-height: 50px;
