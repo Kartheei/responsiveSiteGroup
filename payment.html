@@ -46,14 +46,14 @@
         <hr />
         <p>There is a credit card required for this reservation.</p>
         <p>
-          Free cancellation before 11:59 PM local hotel time on 12 Aug 2023.
+          Free cancellation before 11:59 PM local hotel time on 16 Aug 2023.
         </p>
       </div>
 
       <div class="price-details hidden" id="priceDetails">
         <p>Twin Deluxe Room</p>
         <p>Honors Discount</p>
-        <p>13 Aug 2023</p>
+        <p>16 Aug 2023</p>
         <p>
           <span class="total-label">Total room charge</span><span class="total-cost">$1999.99</span>
         </p>
@@ -101,7 +101,7 @@
           </div>
           <div class="phone-number">
             <label for="phoneNumber">Phone Number<span class="mandatory">*</span></label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+            <input type="tel" id="phoneNumber" name="phoneNumber" required maxlength="10"/>
             <p class="error-message" id="phoneNumberError"></p>
           </div>
         </div>
@@ -120,7 +120,7 @@
 
       <div class="form-group">
         <label for="cardNumber">Card number<span class="mandatory">*</span></label>
-        <input type="text" id="cardNumber" name="cardNumber" required />
+        <input type="text" id="cardNumber" name="cardNumber" required maxlength="16"/>
         <p class="error-message" id="cardNumberError"></p>
       </div>
 
