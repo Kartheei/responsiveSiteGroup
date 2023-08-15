@@ -3,12 +3,17 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
 
 header {
     display: flex;
     align-items: center;
     background-color: #e3dfdf;
-    margin: 3px;
+    margin: 2px;
     justify-content: space-between;
 }
 
@@ -33,40 +38,25 @@ h1 {
 
 .tm-nav {
     max-width: 90%;
-    /* border: 2px solid #3a382e; */
-    /* display: block; */
-    /* margin: 10px auto 5px auto; */
     display: flex;
     justify-content: space-between;
-
-}
-
-.tm-nav div {
-    display: table;
-    padding: 10px;
-    margin: 0px auto;
-}
-
-.tm-nav div ul li {
+  }
+  
+  .tm-nav  ul li {
     display: inline-block;
-
-}
-
-
-.tm-nav div ul li a {
+  }
+  
+  .tm-nav  ul li a {
     font-size: 20px;
     padding: 10px 12px;
     text-decoration: none;
     color: #d16161;
     line-height: 50px;
-
-
-}
-
-.tm-nav div ul li a:hover {
-
+  }
+  
+  .tm-nav  ul li a:hover {
     color: #ec3c6a;
-}
+  }
 
 main {
     background-color: #ffffff;
@@ -356,24 +346,11 @@ main {
     font-size: 1.2vw;
 }
 
-/* .tm-media {
-    display: inline;
-    margin: 0 0 0 59%;
-
-
-}
-
-.tm-media img {
-    margin: 0.5%;
-    width: 3%;
-    height: auto;
-
-} */
-
 
 /* rooms page */
 
-.tm-roomsection {
+.tm-roomsection1,
+.tm-roomsection2 {
     display: flex;
 }
 
@@ -723,4 +700,71 @@ input[type=submit]:focus {
 .btn-primary:focus {
     background-color: #d3305c;
     outline: 0;
+}
+
+/* Payment Screen */
+
+.error-message {
+    color: #ec3c6a;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.thank-you {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you h2 {
+    color: #ec3c6a;
+    margin-bottom: 20px;
+}
+
+.thank-you p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Tablet View */
+@media screen and (max-width: 1082px) {
+    .tm-slider img {
+        width: 100%
+    }
+
+    .tm-slider p {
+        display: flex;
+        left: 10%;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* .tm-roomsection1 {
+        position: absolute;
+        top: 4.5%
+    }
+    .tm-roomsection2 {
+        position: absolute;
+        top: 59%
+    } */
+}
+
+/* Mobile View */
+@media screen and (max-width: 759px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .tm nav {}
 }
