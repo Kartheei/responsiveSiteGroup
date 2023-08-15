@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./asset/css/common.css" />
+  <title>Payment</title>
+</head>
+
+<body>
+  <header class="tm-header">
+    <img class="tm-logo" src="./asset/images/travel-luggage.png" alt="logo" />
+    <h1>Pack Your Bag</h1>
+    <nav class="tm-nav">
+      <!-- <div> -->
+      <ul>
+        <li class="tm-list"><a href="index.html">Home</a></li>
+        <li class="tm-list"><a href="room.html">Rooms</a></li>
+        <li class="tm-list"><a href="booking.html">Booking</a></li>
+        <!-- <li><a href="contact.html">Contact</a></li> -->
+      </ul>
+      <!-- </div> -->
+    </nav>
+  </header>
+  <div class="paycontainer">
+    <div class="content-left">
+      <h2 id="paymentDetailsTitle">Payment and Guest Details</h2>
+      <hr />
+      <button id="togglePriceDetails">Show price details</button>
+      <div class="payment-details" id="paymentDetails">
+        <p>
+          <span class="total-label">Total for stay</span><span class="total-cost">₹13,027.20</span>
+        </p>
+        <p>
+          <span class="total-label">Total room charge</span><span class="total-cost">₹11,040.00</span>
+        </p>
+        <p>
+          <span class="total-label">Total taxes</span><span class="total-cost">₹1,987.20</span>
+        </p>
+
+        <h3>Guarantee and Cancellation Policy</h3>
+        <hr />
+        <p>There is a credit card required for this reservation.</p>
+        <p>
+          Free cancellation before 11:59 PM local hotel time on 12 Aug 2023.
+        </p>
+      </div>
+
+      <div class="price-details hidden" id="priceDetails">
+        <p>Twin Deluxe Room</p>
+        <p>Honors Discount</p>
+        <p>13 Aug 2023</p>
+        <p>
+          <span class="total-label">Total room charge</span><span class="total-cost">₹11,040.00</span>
+        </p>
+        <p>18.00 % per room, per night</p>
+        <p>
+          <span class="total-label">Total taxes</span><span class="total-cost">₹1,987.20</span>
+        </p>
+        <hr />
+        <p>
+          <span class="total-label">Total for stay:</span><span class="total-cost">₹13,027.20</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="content-right">
+      <img src="./asset/images/hotel-image.jpeg" alt="Hotel Image" />
+      <p>StayGlobal Hotel</p>
+    </div>
+  </div>
+
+  <div class="guest-information">
+    <h2>Guest Information</h2>
+    <form>
+      <div class="form-group">
+        <div class="name-group">
+          <div class="first-name">
+            <label for="firstName">First Name<span class="mandatory">*</span></label>
+            <input type="text" id="firstName" name="firstName" required />
+            <p class="error-message" id="firstNameError"></p>
+          </div>
+          <div class="last-name">
+            <label for="lastName">Last Name<span class="mandatory">*</span></label>
+            <input type="text" id="lastName" name="lastName" required />
+            <p class="error-message" id="lastNameError"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="contact-group">
+          <div class="email">
+            <label for="email">Email<span class="mandatory">*</span></label>
+            <input type="email" id="email" name="email" required />
+            <p class="error-message" id="emailError"></p>
+          </div>
+          <div class="phone-number">
+            <label for="phoneNumber">Phone Number<span class="mandatory">*</span></label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+            <p class="error-message" id="phoneNumberError"></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="payment-form">
+    <h2>Payment</h2>
+    <form>
+      <div class="form-group">
+        <label for="cardHolderName">Name of the Card Holder<span class="mandatory">*</span></label>
+        <input type="text" id="cardHolderName" name="cardHolderName" required />
+        <p class="error-message" id="cardHolderNameError"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="cardNumber">Card number<span class="mandatory">*</span></label>
+        <input type="text" id="cardNumber" name="cardNumber" required />
+        <p class="error-message" id="cardNumberError"></p>
+      </div>
+
+      <div class="form-group">
+        <div class="expiry-date">
+          <div class="expiry-month">
+            <label for="expiryMonth">Month<span class="mandatory">*</span></label>
+            <select id="expiryMonth" name="expiryMonth" required>
+              <option value="" disabled selected>Select</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <p class="error-message" id="expiryMonthError"></p>
+          </div>
+          <div class="expiry-year">
+            <label for="expiryYear">Year<span class="mandatory">*</span></label>
+            <select id="expiryYear" name="expiryYear" required>
+              <option value="" disabled selected>Select</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+              <option value="2032">2032</option>
+            </select>
+            <p class="error-message" id="expiryYearError"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="securityCode">Security Code<span class="mandatory">*</span></label>
+        <input type="text" id="securityCode" name="securityCode" required />
+        <p class="error-message" id="securityCodeError"></p>
+      </div>
+
+      <div class="form-group">
+        <button id="bookReservationBtn" type="submit">
+          Book Reservation
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="tm-footer">
+    <div class="tm-us">
+      <p class="bold">About Us</p>
+      <p>
+        We are a part of chain of luxury hotels which extends all over the
+        world. We provide a luxorious stay with various value added and free
+        services which will make you visit us over and over again.
+      </p>
+    </div>
+
+    <div class="tm-address">
+      <p class="bold">Address</p>
+      <p>
+        420, Park Avenue, Toronto Phone : (1) 8754180430 Email :
+        majestic@info.com
+      </p>
+    </div>
+    <br />
+  </footer>
+
+  <script src="payment.js"></script>
+</body>
+
+</html>
