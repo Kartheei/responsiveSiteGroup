@@ -996,4 +996,35 @@ input[type=submit]:focus {
     }
 
     .tm nav {}
+
+}
+
+/* ----- team.html -------- */
+table caption {
+    font-family: "Gabriola", "sans-serif";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+thead {
+    background-color: rgb(66, 70, 65);
+    color: #eee;
+}
+tr:nth-child(even){
+    background-color: rgba(97, 109, 92, 0.63);
+}
+
+th, td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+table caption {
+    font-weight: 600;
 }
