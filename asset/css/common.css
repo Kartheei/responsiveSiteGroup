@@ -512,7 +512,7 @@ input::-webkit-input-placeholder {
 }
 
 input,
-select,
+#selectrooms,
 textarea {
     color: #ec3d68;
 }
@@ -528,10 +528,15 @@ textarea::-webkit-input-placeholder {
 
 label {
     font-size: 2vw;
-    color: #fff;
     font-weight: 700;
 }
 
+.tm-num1,
+.arrival,
+.tm-num2,
+#inlinelable {
+    color: #fff;
+}
 
 .tm-booking::after {
     content: " ";
@@ -746,6 +751,10 @@ input[type=submit]:focus {
     display: none;
 }
 
+.togglebutton {
+    padding: 10px
+}
+
 #togglePriceDetails {
     background-color: #007bff;
     color: #fff;
@@ -764,7 +773,7 @@ input[type=submit]:focus {
 .payment-form,
 .guest-information {
     width: 55%;
-    margin-left: 115px;
+    margin-left: 99px;
     margin-top: 20px;
     background-color: #fff;
     padding: 20px;
@@ -804,7 +813,7 @@ input[type=submit]:focus {
 .form-group select {
     appearance: none;
     -webkit-appearance: none;
-    background: url("images/arrow-down.png") no-repeat right center;
+    background: url("../images/arrow-down.png") no-repeat right center;
     background-size: 15px;
     padding-right: 30px;
 }
@@ -832,6 +841,15 @@ input[type=submit]:focus {
 .email,
 .phone-number {
     flex: 1;
+}
+
+.email input {
+    margin-left: 2px;
+}
+
+.phone-number {
+    margin-top: 10px;
+
 }
 
 .email input,
@@ -950,6 +968,11 @@ input[type=submit]:focus {
     .container {
         display: flex;
         justify-content: space-between;
+    }
+
+    .guest-information,
+    .payment-form {
+        margin-left: 60px;
     }
 
     /* .tm-roomsection1 {
