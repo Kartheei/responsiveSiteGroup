@@ -104,21 +104,9 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-<<<<<<< Updated upstream
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Black color with 60% opacity */
-}
-
-/* .tm-slidertext > p{
-    color: #1f1e1d;
-    font-weight: 900;
-} */
-=======
     height: 95%;
     background-color: rgba(0, 0, 0, 0.6); /* Black color with 60% opacity */
   }
->>>>>>> Stashed changes
 
 .bold {
     padding-bottom: 5px;
@@ -1001,8 +989,97 @@ input[type=submit]:focus {
         display: block;
     }
 
-    .tm nav {}
+    .tm-header{
+        display: flex;
+        flex-direction: column;
+    }
 
+    .tm-header div{
+        /* align-items: flex-start; */
+        display: flex;
+        
+    }
+    h1{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    header{
+        align-items: flex-start;
+    }
+    .tm-logo{
+        width: 40px;
+        height: 50px;
+    }
+
+    .tm-nav {
+        display: flex;
+        max-width: fit-content;
+    }
+    .tm-slider{
+        height:90%;
+    }
+    .tm-slider p{
+
+        font-size: larger;
+    }
+    .tm-slidertext{
+        width: 100%;
+        /* position:absolute; */
+    top: 30%;
+    left: 20%;
+    color: #fff;
+    }
+
+    /* Footer */
+    .tm-address .bold,
+    .tm-us .bold{
+        font-size: 3.5vw;
+    }
+    .tm-address p,
+    .tm-us p{
+        font-size: 10px;
+    }
+    .tm-us, .tm-address {
+        max-width: 100%;
+        width: 100%;
+        margin: 2% 0;
+        text-align: center;
+    }
+/* services */
+    .services .container{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .services .container section{
+        /* margin-left: 1rem; */
+        height:300px;
+        width: 80%;
+    }
+
+    /* Other Adjustments */
+    .sub-title, .inner-text {
+        font-size: 20px;
+    }
+
+    .tm-review p {
+        font-size: 14px;
+    }
+
+    .know-more-btn {
+        margin-top: 1rem;
+        font-size: 14px;
+        padding: 2% 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 2% 4%;
+    }
 }
 
 /* ----- team.html -------- */
