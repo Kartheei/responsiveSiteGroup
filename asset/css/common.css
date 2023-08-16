@@ -104,6 +104,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< Updated upstream
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     /* Black color with 60% opacity */
@@ -113,6 +114,11 @@ main {
     color: #1f1e1d;
     font-weight: 900;
 } */
+=======
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black color with 60% opacity */
+  }
+>>>>>>> Stashed changes
 
 .bold {
     padding-bottom: 5px;
