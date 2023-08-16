@@ -206,6 +206,7 @@ main {
 .tm-serimage {
     display: inline-block;
     max-width: 20%;
+
     width: 10%;
     height: auto;
     padding-bottom: 10%;
@@ -218,6 +219,10 @@ main {
 
     max-width: 75%;
     padding: 5%;
+}
+
+.servicesimage {
+    height: 20rem;
 }
 
 .tm-service p {
@@ -1082,15 +1087,17 @@ input[type=submit]:focus {
         width: 80%;
     }
 
+    .servicesimage {
+        height: 13rem;
+        /* max-height: fit-content; */
+    }
+
     /* Other Adjustments */
     .sub-title,
     .inner-text {
         font-size: 20px;
     }
 
-    .tm-review p {
-        font-size: 14px;
-    }
 
     .know-more-btn {
         margin-top: 1rem;
@@ -1135,14 +1142,17 @@ input[type=submit]:focus {
         display: flex;
         width: 100%
     }
-    .tm-form1{
+
+    .tm-form1 {
         max-width: 100%;
         width: 100%;
     }
-    .vertical-line{
+
+    .vertical-line {
         display: none;
     }
-    .paycontainer{
+
+    .paycontainer {
         flex-direction: column;
         display: flex;
         width: 100%
