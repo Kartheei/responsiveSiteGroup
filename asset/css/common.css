@@ -980,7 +980,8 @@ input[type=submit]:focus {
 
     .guest-information,
     .payment-form {
-        margin-left: 60px;
+
+        margin-left: 36px;
     }
 
     /* .tm-roomsection1 {
@@ -1002,7 +1003,26 @@ input[type=submit]:focus {
     .mobile {
         display: block;
     }
+    .name-group {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
 
+    }
+    .contact-group{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+    .expiry-date{
+        display: flex;
+        gap: 15px;
+        flex-direction: column; 
+    }
+    .form-group select {
+        padding-right: 30px;
+        max-width: 14rem;
+    }
     .tm-header{
         display: flex;
         flex-direction: column;
