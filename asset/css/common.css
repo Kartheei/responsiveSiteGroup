@@ -43,6 +43,13 @@ h1 {
     justify-content: space-between;
 }
 
+
+.tm-header div{
+    align-items:center;
+    display: flex;
+    
+}
+
 .tm-nav ul li {
     display: inline-block;
 }
@@ -53,6 +60,9 @@ h1 {
     text-decoration: none;
     color: #d16161;
     line-height: 50px;
+}
+.tm-logo{
+    margin-right: 1rem;
 }
 
 .tm-nav ul li a:hover {
@@ -1024,7 +1034,7 @@ input[type=submit]:focus {
         font-size: larger;
     }
     .tm-slidertext{
-        width: 100%;
+        /* width: 100%; */
         /* position:absolute; */
     top: 30%;
     left: 20%;
@@ -1056,7 +1066,7 @@ input[type=submit]:focus {
     }
 
     .services .container section{
-        /* margin-left: 1rem; */
+        margin-left: 1rem;
         height:300px;
         width: 80%;
     }
