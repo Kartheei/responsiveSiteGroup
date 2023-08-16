@@ -44,10 +44,10 @@ h1 {
 }
 
 
-.tm-header div{
-    align-items:center;
+.tm-header div {
+    align-items: center;
     display: flex;
-    
+
 }
 
 .tm-nav ul li {
@@ -55,13 +55,14 @@ h1 {
 }
 
 .tm-nav ul li a {
-    font-size: 20px;
-    padding: 10px 12px;
+    font-size: 18px;
+    padding: 5px 5px;
     text-decoration: none;
     color: #d16161;
     line-height: 50px;
 }
-.tm-logo{
+
+.tm-logo {
     margin-right: 1rem;
 }
 
@@ -115,8 +116,9 @@ main {
     left: 0;
     width: 100%;
     height: 95%;
-    background-color: rgba(0, 0, 0, 0.6); /* Black color with 60% opacity */
-  }
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black color with 60% opacity */
+}
 
 .bold {
     padding-bottom: 5px;
@@ -999,25 +1001,27 @@ input[type=submit]:focus {
         display: block;
     }
 
-    .tm-header{
+    .tm-header {
         display: flex;
         flex-direction: column;
     }
 
-    .tm-header div{
+    .tm-header div {
         /* align-items: flex-start; */
         display: flex;
-        
+
     }
-    h1{
+
+    h1 {
         margin-left: 10px;
         margin-top: 10px;
     }
 
-    header{
+    header {
         align-items: flex-start;
     }
-    .tm-logo{
+
+    .tm-logo {
         width: 40px;
         height: 50px;
     }
@@ -1026,53 +1030,61 @@ input[type=submit]:focus {
         display: flex;
         max-width: fit-content;
     }
-    .tm-slider{
-        height:90%;
+
+    .tm-slider {
+        height: 90%;
     }
-    .tm-slider p{
+
+    .tm-slider p {
 
         font-size: larger;
     }
-    .tm-slidertext{
+
+    .tm-slidertext {
         /* width: 100%; */
         /* position:absolute; */
-    top: 30%;
-    left: 20%;
-    color: #fff;
+        top: 30%;
+        left: 20%;
+        color: #fff;
     }
 
     /* Footer */
     .tm-address .bold,
-    .tm-us .bold{
+    .tm-us .bold {
         font-size: 3.5vw;
     }
+
     .tm-address p,
-    .tm-us p{
+    .tm-us p {
         font-size: 10px;
     }
-    .tm-us, .tm-address {
+
+    .tm-us,
+    .tm-address {
         max-width: 100%;
         width: 100%;
         margin: 2% 0;
         text-align: center;
     }
-/* services */
-    .services .container{
-        display:flex ;
+
+    /* services */
+    .services .container {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
     }
 
-    .services .container section{
+    .services .container section {
         margin-left: 1rem;
-        height:300px;
+        height: 300px;
         width: 80%;
     }
 
     /* Other Adjustments */
-    .sub-title, .inner-text {
+    .sub-title,
+    .inner-text {
         font-size: 20px;
     }
 
@@ -1090,6 +1102,51 @@ input[type=submit]:focus {
         font-size: 14px;
         padding: 2% 4%;
     }
+
+    .tm-roomsection1,
+    .tm-roomsection2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+    }
+
+    .tm-room1 {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .column {
+        max-width: 90%;
+        width: 90%;
+        padding-top: 12px;
+    }
+
+    .form-booking {
+        flex-direction: column;
+        display: flex;
+        width: 100%
+    }
+    .tm-form1{
+        max-width: 100%;
+        width: 100%;
+    }
+    .vertical-line{
+        display: none;
+    }
+    .paycontainer{
+        flex-direction: column;
+        display: flex;
+        width: 100%
+    }
 }
 
 /* ----- team.html -------- */
@@ -1098,6 +1155,7 @@ table caption {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 table {
     width: 70%;
     margin-left: auto;
@@ -1105,19 +1163,23 @@ table {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 thead {
     background-color: rgb(66, 70, 65);
     color: #eee;
 }
-tr:nth-child(even){
+
+tr:nth-child(even) {
     background-color: rgba(97, 109, 92, 0.63);
 }
 
-th, td {
+th,
+td {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
 }
+
 table caption {
     font-weight: 600;
 }
